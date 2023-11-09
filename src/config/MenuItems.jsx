@@ -22,11 +22,6 @@ const NormalMenuItems = [
     label: <Link to="/">Home</Link>,
     icon: <HomeOutlined />,
   },
-  {
-    key: "resume",
-    label: <Link to="/about-me">About-Me</Link>,
-    icon: <UserOutlined />,
-  },
 ];
 
 /**

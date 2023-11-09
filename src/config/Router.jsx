@@ -1,8 +1,6 @@
-import BasicLayout from "components/templates/BasicLayout";
 import MinimalLayout from "components/templates/MinimalLayout";
-import { Homepage, Loading } from "pages";
-import Resume from "pages/Resume";
-import Dashboard from "pages/admin/Dashboard";
+import { Homepage } from "pages";
+import Login from "pages/Login/Login";
 
 const Router = [
   {
@@ -16,27 +14,9 @@ const Router = [
         element: <Homepage />,
       },
       {
-        id: "resume",
-        path: "about-me",
-        element: <Resume />,
-      },
-    ],
-  },
-  {
-    path: "/admin",
-    element: <BasicLayout />,
-    children: [
-      {
-        index: true,
-        element: <Dashboard />,
-      },
-      {
-        path: "loading",
-        element: <Loading />,
-      },
-      {
-        path: "um",
-        element: <>User Management</>,
+        id: "login",
+        path: "login",
+        element: <Login />,
       },
     ],
   },

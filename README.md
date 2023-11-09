@@ -63,11 +63,6 @@ Project
 │   ├── i18n                                  // i18next resource
 │   │   ├── {lang}                            // ISO 639-1 Language Code [en,...,ko]
 │   │   │   └── translation.json
-│   ├── types                                 // extend interface
-│   │   ├── ExtendedMenuItems.d.ts
-│   │   └── ExtendedRouter.d.ts
-│   ├── ExtendedMenuItems.js
-│   ├── ExtendedRouter.js
 │   ├── MenuItems.js
 │   └── Router.js
 ├── context                                   // React Context
