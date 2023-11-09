@@ -1,0 +1,24 @@
+{
+  "text": {
+    "package": {
+      "title": "React Starter Template",
+      "description": "중소규모급 React 프로젝트를 빠르게 시작하기 위한 템플릿"
+    },
+    "go-back": "돌아가기",
+    "remember-me": "아이디 기억",
+    "username": "사용자 이름",
+    "password": "비밀번호"
+  },
+  "warn": {
+    "required": "{{target}}을 입력해주세요!"
+  },
+  "error": {
+    "page": {
+      "not-found": "죄송합니다. 방문한 페이지가 존재하지 않습니다.",
+      "unauthorized": "죄송합니다. 이 페이지에 액세스할 수 있는 권한이 없습니다."
+    }
+  },
+  "test": {
+    "login": "로그인"
+  }
+}

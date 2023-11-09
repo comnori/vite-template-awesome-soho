@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json.schemastore.org/jsdoc-1.0.0.json",
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": ["jsdoc", "closure"]
+  },
+  "recurseDepth": 10,
+  "plugins": [
+    "better-docs/typescript",
+    "better-docs/category",
+    "better-docs/typedef-import",
+    "plugins/markdown",
+    "jsdoc-ts-utils",
+    "exclude-member/exclude"
+  ],
+  "source": {
+    "include": ["./src"],
+    "includePattern": "\\.(js|jsx|ts)$",
+    "exclude": ["node_modules"],
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "opts": {
+    "template": "node_modules/better-docs",
+    "encoding": "utf8",
+    "recurse": true,
+    "destination": "doc",
+    "package": "package.json"
+  },
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false,
+    "search": false,
+    "better-docs": {
+      "name": "new_template Document",
+      "title": "new_template Document",
+      "hideGenerator": true,
+      "navLinks": [
+        {
+          "label": "Github",
+          "href": "https://github.com/comnori/new_template"
+        },
+        {
+          "label": "Example Application",
+          "href": "https://github.com/comnori/new_template"
+        }
+      ]
+    }
+  },
+  "tsUtils": {
+    "typedefImports": true,
+    "typeOfTypes": true,
+    "extendTypes": true,
+    "modulesOnMemberOf": true,
+    "modulesTypesShortName": true,
+    "parentTag": true,
+    "removeTaggedBlocks": true,
+    "removeTags": true,
+    "typeScriptUtilityTypes": false,
+    "tagsReplacement": {}
+  }
+}

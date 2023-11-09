@@ -1,0 +1,24 @@
+{
+  "text": {
+    "package": {
+      "title": "React Starter Template",
+      "description": "Template to quickly start small to medium-sized React projects"
+    },
+    "go-back": "Go Back",
+    "remember-me": "Remember me",
+    "username": "Username",
+    "password": "Password"
+  },
+  "warn": {
+    "required": "Please input your {{target}}!"
+  },
+  "error": {
+    "page": {
+      "not-found": "Sorry, the page you visited does not exist.",
+      "unauthorized": "Sorry, you are not authorized to access this page."
+    }
+  },
+  "test": {
+    "login": "Login"
+  }
+}

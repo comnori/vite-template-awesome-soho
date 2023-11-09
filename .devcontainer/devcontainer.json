@@ -1,0 +1,132 @@
+{
+  "name": "vite-template-awesome-soho",
+  "image": "mcr.microsoft.com/devcontainers/base:jammy",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "userGid": "1001",
+      "username": "comnori",
+      "userUid": "1001"
+    },
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "17"
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "18"
+    }
+  },
+  "postCreateCommand": {
+    "Change User shell": "bash ${containerWorkspaceFolder}/.devcontainer/scripts/init.sh",
+    "Yarn enable": "corepack enable",
+    "Oh My Zsh Installer for Docker": "bash ${containerWorkspaceFolder}/.devcontainer/scripts/zsh-in-docker.sh -t jonathan -p git -p ssh-agent -p https://github.com/zsh-users/zsh-autosuggestions -p https://github.com/zsh-users/zsh-completions",
+    "Installation global package": "yarn global add serve"
+  },
+  "forwardPorts": [
+    3000
+  ],
+  "hostRequirements": {
+    "cpus": 8,
+    "memory": "16gb"
+  },
+  "portsAttributes": {
+    "3000": {
+      "label": "Application port"
+    },
+    "64120": {
+      "label": "SonarLint"
+    }
+  },
+  "remoteEnv": {
+    "NODE_ENV": "development",
+    "PATH": "${containerEnv:PATH}"
+  },
+  "remoteUser": "comnori",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "aaron-bond.better-comments",
+        "chrisbibby.hide-node-modules",
+        "christian-kohler.npm-intellisense",
+        "CS50.extension-uninstaller",
+        "dbaeumer.vscode-eslint",
+        "dotenv.dotenv-vscode",
+        "eamodio.gitlens",
+        "EditorConfig.EditorConfig",
+        "esbenp.prettier-vscode",
+        "fabiospampinato.vscode-todo-plus",
+        "fengzhu.css-module-intellisense",
+        "formulahendry.auto-rename-tag",
+        "liamhammett.inline-parameters",
+        "lokalise.i18n-ally",
+        "meganrogge.template-string-converter",
+        "mhutchie.git-graph",
+        "mikestead.dotenv",
+        "ms-playwright.playwright",
+        "ms-vscode.live-server",
+        "oderwat.indent-rainbow",
+        "PKief.material-icon-theme",
+        "SonarSource.sonarlint-vscode",
+        "usernamehw.errorlens",
+        "zhuangtongfa.material-theme",
+        "ZixuanChen.vitest-explorer"
+      ],
+      "settings": {
+        "editor.codeActionsOnSave": {
+          "source.fixAll": true,
+          "source.organizeImports": true
+        },
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.foldingImportsByDefault": true,
+        "editor.formatOnPaste": true,
+        "editor.formatOnSave": true,
+        "extension-uninstaller.uninstall": [
+          "vscjava.vscode-java-pack"
+        ],
+        "files.exclude": {
+          "**/.DS_Store": true,
+          "**/.git": true,
+          "**/.hg": true,
+          "**/.svn": true,
+          "**/CVS": true,
+          "**/node_modules": true,
+          "**/Thumbs.db": true
+        },
+        "i18n-ally.displayLanguage": "ko",
+        "i18n-ally.editor.preferEditor": true,
+        "i18n-ally.enabledFrameworks": [
+          "react-i18next"
+        ],
+        "i18n-ally.keystyle": "nested",
+        "i18n-ally.localesPaths": [
+          "./src/config/i18n"
+        ],
+        "i18n-ally.sourceLanguage": "en",
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "todo.embedded.exclude": [
+          "**/*.html",
+          "**/*.map",
+          "**/*.min.*",
+          "**/*.{3ds,3g2,3gp,7z,a,aac,adp,ai,aif,aiff,alz,ape,apk,ar,arj,asf,au,avi,bak,baml,bh,bin,bk,bmp,btif,bz2,bzip2,cab,caf,cgm,class,cmx,cpio,cr2,csv,cur,dat,dcm,deb,dex,djvu,dll,dmg,dng,doc,docm,docx,dot,dotm,dra,DS_Store,dsk,dts,dtshd,dvb,dwg,dxf,ecelp4800,ecelp7470,ecelp9600,egg,eol,eot,epub,exe,f4v,fbs,fh,fla,flac,fli,flv,fpx,fst,fvt,g3,gif,graffle,gz,gzip,h261,h263,h264,icns,ico,ief,img,ipa,iso,jar,jpeg,jpg,jpgv,jpm,jxr,key,ktx,lha,lib,lvp,lz,lzh,lzma,lzo,m3u,m4a,m4v,mar,mdi,mht,mid,midi,mj2,mka,mkv,mmr,mng,mobi,mov,movie,mp3,mp4,mp4a,mpeg,mpg,mpga,mxu,nef,npx,numbers,o,oga,ogg,ogv,otf,pages,pbm,pcx,pdb,pdf,pea,pgm,pic,png,pnm,pot,potm,potx,ppa,ppam,ppm,pps,ppsm,ppsx,ppt,pptm,pptx,psd,pya,pyc,pyo,pyv,qt,rar,ras,raw,resources,rgb,rip,rlc,rmf,rmvb,rtf,rz,s3m,s7z,scpt,sgi,shar,sil,sketch,slk,smv,so,sub,swf,tar,tbz,tbz2,tga,tgz,thmx,tif,tiff,tlz,ttc,ttf,txz,udf,uvh,uvi,uvm,uvp,uvs,uvu,viv,vob,war,wav,wax,wbmp,wdp,weba,webm,webp,whl,wim,wm,wma,wmv,wmx,woff,woff2,wvx,xbm,xif,xla,xlam,xls,xlsb,xlsm,xlsx,xlt,xltm,xltx,xm,xmind,xpi,xpm,xwd,xz,z,zip,zipx}",
+          "**/.*",
+          "**/.*/**",
+          "**/_output/**",
+          "**/bower_components/**",
+          "**/build/**",
+          "**/CHANGELOG",
+          "**/CHANGELOG.*",
+          "**/dist/**",
+          "**/node_modules/**",
+          "**/out/**",
+          "**/output/**",
+          "**/release/**",
+          "**/releases/**",
+          "**/static/**",
+          "**/target/**",
+          "**/third_party/**",
+          "**/vendor/**",
+          "**/venv/**"
+        ],
+        "typescript.tsdk": "node_modules\\typescript\\lib"
+      }
+    }
+  }
+}
