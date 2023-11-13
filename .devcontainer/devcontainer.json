@@ -39,7 +39,6 @@
     "NODE_ENV": "development",
     "PATH": "${containerEnv:PATH}"
   },
-  "remoteUser": "comnori",
   "customizations": {
     "vscode": {
       "extensions": [
