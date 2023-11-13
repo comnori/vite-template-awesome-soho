@@ -51,7 +51,6 @@
   },
   "devDependencies": {
     "@optimize-lodash/rollup-plugin": "^4.0.4",
-    "@rollup/plugin-node-resolve": "^15.2.3",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
     "@types/react": "^18.2.20",
