@@ -17,6 +17,7 @@
 6. [Light, Dark] theme changer
 7. Multilingual support
 8. IDE environment integration
+9. No need to setting for develop environment
 
 ### Browser Support
 
@@ -26,8 +27,23 @@
 
 ## Installation
 
+1. Install `Dev Containers` extension
+2. Download template
+
 ```bash
 npx degit comnori/vite-template-awesome-soho my-app
+```
+
+3. git initialization
+
+```bash
+git init
+```
+
+4. Install editor sdk
+
+```bash
+yarn dlx @yarnpkg/sdks vscode
 ```
 
 ### Main Library
