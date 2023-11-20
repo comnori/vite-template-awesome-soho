@@ -4,6 +4,8 @@
 
 <p align="center">React template in javascript/Typesciprt base using vite</p>
 
+[![Visitors](https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2Fcomnori%2Fvite-template-awesome-soho%2F&countColor=%23263759)](https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2Fcomnori%2Fvite-template-awesome-soho%2F)
+
 ### Features
 
 1. Using Nextgeneration Frontend tool (Vite / yarn berry)
