@@ -14,7 +14,9 @@
     "Oh My Zsh Installer for Docker": "bash ${containerWorkspaceFolder}/.devcontainer/scripts/zsh-in-docker.sh -t jonathan -p git -p ssh-agent -p https://github.com/zsh-users/zsh-autosuggestions -p https://github.com/zsh-users/zsh-completions",
     "Disable yarn telemetory": "yarn config set --home enableTelemetry 0"
   },
-  "forwardPorts": [3000],
+  "forwardPorts": [
+    3000
+  ],
   "portsAttributes": {
     "3000": {
       "label": "Application port"
@@ -34,33 +36,32 @@
   "customizations": {
     "vscode": {
       "extensions": [
-		"aaron-bond.better-comments",
-		"chrisbibby.hide-node-modules",
-		"christian-kohler.npm-intellisense",
-		"CS50.extension-uninstaller",
-		"dbaeumer.vscode-eslint",
-		"dotenv.dotenv-vscode",
-		"eamodio.gitlens",
-		"EditorConfig.EditorConfig",
-		"esbenp.prettier-vscode",
-		"fabiospampinato.vscode-todo-plus",
-		"fengzhu.css-module-intellisense",
-		"formulahendry.auto-rename-tag",
-		"liamhammett.inline-parameters",
-		"lokalise.i18n-ally",
-		"meganrogge.template-string-converter",
-		"mhutchie.git-graph",
-		"mikestead.dotenv",
-		"ms-playwright.playwright",
-		"ms-vscode.live-server",
-		"oderwat.indent-rainbow",
-		"PKief.material-icon-theme",
-		"SonarSource.sonarlint-vscode",
-		"usernamehw.errorlens",
-		"zhuangtongfa.material-theme",
-		"ZixuanChen.vitest-explorer",
-		"arcanis.vscode-zipfs"
-	],
+        "aaron-bond.better-comments",
+        "chrisbibby.hide-node-modules",
+        "christian-kohler.npm-intellisense",
+        "CS50.extension-uninstaller",
+        "dbaeumer.vscode-eslint",
+        "dotenv.dotenv-vscode",
+        "eamodio.gitlens",
+        "EditorConfig.EditorConfig",
+        "esbenp.prettier-vscode",
+        "Gruntfuggly.todo-tree",
+        "fengzhu.css-module-intellisense",
+        "formulahendry.auto-rename-tag",
+        "liamhammett.inline-parameters",
+        "lokalise.i18n-ally",
+        "meganrogge.template-string-converter",
+        "mhutchie.git-graph",
+        "donjayamanne.githistory",
+        "ms-playwright.playwright",
+        "oderwat.indent-rainbow",
+        "PKief.material-icon-theme",
+        "SonarSource.sonarlint-vscode",
+        "usernamehw.errorlens",
+        "zhuangtongfa.material-theme",
+        "ZixuanChen.vitest-explorer",
+        "arcanis.vscode-zipfs"
+      ],
       "settings": {
         "editor.codeActionsOnSave": {
           "source.fixAll": true,
@@ -70,7 +71,9 @@
         "editor.foldingImportsByDefault": true,
         "editor.formatOnPaste": true,
         "editor.formatOnSave": true,
-        "extension-uninstaller.uninstall": ["vscjava.vscode-java-pack"],
+        "extension-uninstaller.uninstall": [
+          "vscjava.vscode-java-pack"
+        ],
         "files.exclude": {
           "**/.DS_Store": true,
           "**/.git": true,
@@ -82,9 +85,13 @@
         },
         "i18n-ally.displayLanguage": "ko",
         "i18n-ally.editor.preferEditor": true,
-        "i18n-ally.enabledFrameworks": ["react-i18next"],
+        "i18n-ally.enabledFrameworks": [
+          "react-i18next"
+        ],
         "i18n-ally.keystyle": "nested",
-        "i18n-ally.localesPaths": ["./src/config/i18n"],
+        "i18n-ally.localesPaths": [
+          "./src/config/i18n"
+        ],
         "i18n-ally.sourceLanguage": "en",
         "terminal.integrated.defaultProfile.linux": "zsh",
         "todo.embedded.exclude": [
