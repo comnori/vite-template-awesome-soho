@@ -14,9 +14,7 @@ sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.1
 corepack enable
 
 yarn config set --home enableTelemetry 0
-yarn install
-
-yarn global add gatsby-cli
+# yarn install
 
 cat << EOF >> ~/.zshrc
 
