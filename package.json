@@ -53,6 +53,7 @@
     "@optimize-lodash/rollup-plugin": "^4.0.4",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
+    "@types/node": "^20.10.5",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react": "^4.1.0",
@@ -72,8 +73,9 @@
     "exclude-member": "^1.0.0",
     "jsdoc": "^3.6.11",
     "jsdoc-ts-utils": "^4.0.0",
+    "knip": "^3.8.4",
     "prettier": "^3.0.0",
-    "typescript": "^5.2.2",
+    "typescript": "^5.3.3",
     "vite": "^4.4.11",
     "vite-plugin-svgr": "^4.1.0",
     "vite-tsconfig-paths": "^4.2.1",
@@ -88,7 +90,8 @@
     "serve": "vite preview",
     "doc": "npx jsdoc -c jsdoc.json",
     "analyze": "npx vite-bundle-visualizer",
-    "lint": "npx eslint ./src"
+    "lint": "npx eslint ./src",
+    "knip": "knip"
   },
   "directories": {
     "doc": "JsDoc",
