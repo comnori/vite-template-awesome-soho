@@ -46,19 +46,17 @@
     "react-redux": "^8.1.1",
     "react-router-dom": "^6.14.1",
     "sass": "^1.63.6",
-    "traverse": "^0.6.7",
     "web-vitals": "^3.4.0"
   },
   "devDependencies": {
     "@optimize-lodash/rollup-plugin": "^4.0.4",
+    "@pnpm/logger": "^5.0.0",
     "@testing-library/react": "^14.0.0",
     "@testing-library/user-event": "^14.4.3",
     "@types/node": "^20.10.5",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
-    "@vitejs/plugin-react": "^4.1.0",
     "@vitejs/plugin-react-swc": "^3.4.0",
-    "@welldone-software/why-did-you-render": "^7.0.1",
     "better-docs": "^2.7.2",
     "eslint": "^8.48.0",
     "eslint-config-airbnb": "^19.0.4",
@@ -99,7 +97,7 @@
     "type": "type declaration"
   },
   "engines": {
-    "node": "^18"
+    "node": ">=18"
   },
   "browserslist": {
     "production": [
@@ -123,5 +121,5 @@
       "url": "https://patreon.com/comnori"
     }
   ],
-  "packageManager": "yarn@4.0.0"
+  "packageManager": "yarn@4.0.2"
 }
