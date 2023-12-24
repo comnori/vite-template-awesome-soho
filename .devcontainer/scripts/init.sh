@@ -14,22 +14,4 @@ sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.1
 corepack enable
 
 yarn config set --home enableTelemetry 0
-# yarn install
-
-cat << EOF >> ~/.zshrc
-
-# set PATH so it includes user's yarn global bin if it exists
-if [ -d "\$HOME/.yarn/bin" ] ; then
-  PATH="\$(yarn global bin):\$PATH"
-fi
-EOF
-
-mkdir -p ~/.config/gatsby
-
-cat << EOF >> ~/.config/gatsby/config.json
-{
-  "cli": {
-    "packageManager": "yarn",
-  }
-}
-EOF
+yarn install
