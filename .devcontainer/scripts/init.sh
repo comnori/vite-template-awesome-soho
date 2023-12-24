@@ -11,6 +11,8 @@ sh -c "$(wget -O- https://github.com/deluan/zsh-in-docker/releases/download/v1.1
   -p https://github.com/zsh-users/zsh-autosuggestions \
   -p https://github.com/zsh-users/zsh-completions
 
-corepack enable
-
-yarn config set --home enableTelemetry 0
+sh -c "corepack enable"
+sh -c "yarn config set --home enableTelemetry 0"
+sh -c "yarn set version berry"
+sh -c "yarn install"
+sh -c "yarn dlx @yarnpkg/sdks vscode"

@@ -1,6 +1,6 @@
 import MinimalLayout from "components/templates/MinimalLayout";
 import { Homepage } from "pages";
-import Login from "pages/Login/Login";
+import Login from "pages/Login";
 
 const Router = [
   {
