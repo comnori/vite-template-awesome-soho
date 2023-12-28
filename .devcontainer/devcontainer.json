@@ -33,7 +33,11 @@
   "remoteUser": "vscode",
   "customizations": {
     "vscode": {
-      "extensions": ["comnori.js-awesome-soho-extension-pack", "ZixuanChen.vitest-explorer", "arcanis.vscode-zipfs"],
+      "extensions": [
+        "comnori.js-awesome-soho-extension-pack",
+        "ZixuanChen.vitest-explorer",
+        "arcanis.vscode-zipfs"
+      ],
       "settings": {
         // editor
         "editor.codeActionsOnSave": {
