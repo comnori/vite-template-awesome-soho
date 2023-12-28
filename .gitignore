@@ -34,3 +34,6 @@ package-lock.json
 
 # etc
 i18n-ally-reviews.yml
+
+# log
+*.log

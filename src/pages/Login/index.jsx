@@ -1,3 +1,3 @@
-import LoginForm from "components/organisms/Common/LoginForm";
+import Login from "./Login";
 
-export default LoginForm;
+export default Login;
