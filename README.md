@@ -42,12 +42,6 @@ npx degit comnori/vite-template-awesome-soho my-app
 git init
 ```
 
-4. Install editor sdk
-
-```bash
-yarn dlx @yarnpkg/sdks vscode
-```
-
 ### Main Library
 
 ### Language
@@ -179,19 +173,6 @@ yarn type
      componentSize: "middle",
    };
    ```
-
-## Troubleshooting
-
-1. Could not read from file error
-
-   Open `.yarnrc.yml` and change nodeLinker `pnp` to `node-modules`
-
-   ```yml
-   #nodeLinker: pnp
-   nodeLinker: node-modules
-   ```
-
-## Known Issue
 
 ## Working
 
