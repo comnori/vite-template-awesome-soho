@@ -3,16 +3,16 @@
   "image": "mcr.microsoft.com/devcontainers/base:jammy",
   "features": {
     "ghcr.io/devcontainers/features/java:1": {
-      "version": "17"
+      "version": "21",
+      "jdkDistro": "ms"
     },
     "ghcr.io/devcontainers/features/node:1": {
-      "version": "18"
+      "version": "20"
     }
   },
   "postCreateCommand": {
-    "Yarn enable": "corepack enable",
-    "Oh My Zsh Installer for Docker": "bash ${containerWorkspaceFolder}/.devcontainer/scripts/zsh-in-docker.sh -t jonathan -p git -p ssh-agent -p https://github.com/zsh-users/zsh-autosuggestions -p https://github.com/zsh-users/zsh-completions",
-    "Disable yarn telemetory": "yarn config set --home enableTelemetry 0"
+    "preInit": "chmod +x ${containerWorkspaceFolder}/.devcontainer/scripts/init.sh",
+    "Init": "${containerWorkspaceFolder}/.devcontainer/scripts/init.sh > init.log"
   },
   "forwardPorts": [
     3000
@@ -36,29 +36,7 @@
   "customizations": {
     "vscode": {
       "extensions": [
-        "aaron-bond.better-comments",
-        "chrisbibby.hide-node-modules",
-        "christian-kohler.npm-intellisense",
-        "CS50.extension-uninstaller",
-        "dbaeumer.vscode-eslint",
-        "dotenv.dotenv-vscode",
-        "eamodio.gitlens",
-        "EditorConfig.EditorConfig",
-        "esbenp.prettier-vscode",
-        "Gruntfuggly.todo-tree",
-        "fengzhu.css-module-intellisense",
-        "formulahendry.auto-rename-tag",
-        "liamhammett.inline-parameters",
-        "lokalise.i18n-ally",
-        "meganrogge.template-string-converter",
-        "mhutchie.git-graph",
-        "donjayamanne.githistory",
-        "ms-playwright.playwright",
-        "oderwat.indent-rainbow",
-        "PKief.material-icon-theme",
-        "SonarSource.sonarlint-vscode",
-        "usernamehw.errorlens",
-        "zhuangtongfa.material-theme",
+        "comnori.js-awesome-soho-extension-pack",
         "ZixuanChen.vitest-explorer",
         "arcanis.vscode-zipfs"
       ],
