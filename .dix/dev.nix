@@ -6,7 +6,6 @@
     pkgs.nodejs_20
   ];
 
-  # Search for the extensions you want on https://open-vsx.org/ and use "publisher.id"
   idx.extensions = [
     "aaron-bond.better-comments",
     "chrisbibby.hide-node-modules",
