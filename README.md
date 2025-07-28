@@ -2,24 +2,32 @@
     <b>Vite React Template for SOHO</b>
 </h1>
 
-<p align="center">React template in javascript/Typesciprt base using vite</p>
+<p align="center">Modern React 19 template with TypeScript/JavaScript using Vite</p>
 
 [![Visitors](https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2Fcomnori%2Fvite-template-awesome-soho%2F&countColor=%23263759)](https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2Fcomnori%2Fvite-template-awesome-soho%2F)
 
-### Features
+### ✨ Features
 
-1. Using Nextgeneration Frontend tool (Vite / yarn berry)
-2. Freedom of choice of language
-   - ECMAScript (javascript)
-   - [ECMAScript with JsDoc typecheck](https://www.typescriptlang.org/docs/handbook/intro-to-js-ts.html)
-   - Typescript
-3. Collaboration between library and vscode extension
-4. Well-defined folder structure
-5. Document Automation
-6. [Light, Dark] theme changer
-7. Multilingual support
-8. IDE environment integration
-9. No need to setting for develop environment
+1. **Modern Frontend Stack** - React 19 + Vite 6 + TypeScript 5.7
+2. **Language Flexibility**
+   - ECMAScript (JavaScript)
+   - [ECMAScript with JSDoc typecheck](https://www.typescriptlang.org/docs/handbook/intro-to-js-ts.html)
+   - TypeScript
+3. **UI/UX Excellence**
+   - Ant Design 5.23 with full theme support
+   - Light/Dark theme toggle with system preference detection
+   - Responsive design with SCSS modules
+4. **State Management** - Redux Toolkit with React-Redux
+5. **Internationalization** - i18next with Korean/English support
+6. **Developer Experience**
+   - Hot Module Replacement (HMR)
+   - ESLint + Prettier configuration
+   - Atomic design pattern (atoms/molecules/organisms/templates)
+   - JSDoc documentation generation
+   - Dev Container support
+7. **Testing & Quality** - Vitest integration
+8. **Routing** - React Router DOM v6 with nested routes
+9. **Performance** - Bundle optimization with Lodash tree-shaking
 
 ### Browser Support
 
@@ -27,175 +35,262 @@
 | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
 | Latest ✔                                                                                         | Latest ✔                                                                                            | Latest ✔                                                                                         | Latest ✔                                                                                      | Latest ✔                                                                                   |
 
-## Installation
+## 🚀 Quick Start
 
-1. Install `Dev Containers` extension
-2. Download template
+### Prerequisites
+- Node.js >=18
+- npm or yarn
 
+### Installation
+
+1. **Clone or download template**
 ```bash
 npx degit comnori/vite-template-awesome-soho my-app
+cd my-app
 ```
 
-3. git initialization
+2. **Install dependencies**
+```bash
+npm install
+# or
+yarn install
+```
 
+3. **Initialize git repository**
 ```bash
 git init
 ```
 
-4. Install editor sdk
+4. **Start development server**
+```bash
+npm start
+# or
+yarn start
+```
 
+5. **Optional: Setup VS Code SDK (for Yarn users)**
 ```bash
 yarn dlx @yarnpkg/sdks vscode
 ```
 
-### Main Library
+### Available Scripts
 
-### Language
+- `npm start` - Start development server (port 3000)
+- `npm run build` - Build for production
+- `npm run test` - Run tests with Vitest
+- `npm run lint` - Run ESLint
+- `npm run type` - Generate TypeScript declarations
+- `npm run doc` - Generate JSDoc documentation
 
-<img height="32" width="32" src="https://cdn.simpleicons.org/javascript" alt="javascript" /> <img height="32" width="32" src="https://cdn.simpleicons.org/typescript" alt="typesciprt"/>
+## 🛠️ Tech Stack
 
-### Created by
+### Core Technologies
+<img height="32" width="32" src="https://cdn.simpleicons.org/react" alt="react"/> <img height="32" width="32" src="https://cdn.simpleicons.org/typescript" alt="typescript"/> <img height="32" width="32" src="https://cdn.simpleicons.org/javascript" alt="javascript"/> <img height="32" width="32" src="https://cdn.simpleicons.org/vite" alt="vite"/>
 
-<img height="32" width="32" src="https://cdn.simpleicons.org/vite" alt="vite" />
+**React 19** • **TypeScript 5.7** • **Vite 6** • **JavaScript ES2024**
 
-### Library
+### UI & Styling
+<img height="32" width="32" src="https://cdn.simpleicons.org/antdesign" alt="ant design"/> <img height="32" width="32" src="https://cdn.simpleicons.org/sass" alt="sass"/>
 
-<img height="32" width="32" src="https://cdn.simpleicons.org/react" alt="react"/> <img height="32" width="32" src="https://cdn.simpleicons.org/reactrouter" alt="react-router"/> <img height="32" width="32" src="https://cdn.simpleicons.org/antdesign" alt="ant design"/>
-<img height="32" width="32" src="https://cdn.simpleicons.org/redux" alt="redux"/> <img height="32" width="32" src="https://cdn.simpleicons.org/axios" alt="axios"/> <img height="32" width="32" src="https://cdn.simpleicons.org/sass" alt="sass"/> <img height="32" width="32" src="https://cdn.simpleicons.org/i18next" alt="i18next" />
+**Ant Design 5.23** • **SCSS Modules** • **CSS-in-JS**
 
-### Dev tools
+### State Management & Routing
+<img height="32" width="32" src="https://cdn.simpleicons.org/redux" alt="redux"/> <img height="32" width="32" src="https://cdn.simpleicons.org/reactrouter" alt="react-router"/>
 
-<img height="32" width="32" src="https://cdn.simpleicons.org/eslint" alt="eslint"/> <img height="32" width="32" src="https://cdn.simpleicons.org/prettier" alt="prettier"/> <img height="32" width="32" src="https://cdn.simpleicons.org/dotenv" alt=".env"/> <img height="32" width="32" src="https://cdn.simpleicons.org/editorconfig/aaaaaa" alt="EditorConfig"/> <img height="32" width="32" src="https://cdn.simpleicons.org/containerd/aaaaaa" alt="devcontainer"/> <img height="32" width="32" src="https://cdn.simpleicons.org/sonarlint" alt="Sonar Lint"/> <img height="32" width="32" src="https://cdn.simpleicons.org/vitest" alt="vitest"/> <img height="32" width="32" src="https://cdn.simpleicons.org/storybook" alt="storybook"/> <img height="32" width="32" src="https://cdn.simpleicons.org/cypress/000000/ffffff" alt="Cypress"/>
+**Redux Toolkit** • **React Router v6**
 
-### Src Folder structure
+### Additional Libraries
+<img height="32" width="32" src="https://cdn.simpleicons.org/axios" alt="axios"/> <img height="32" width="32" src="https://cdn.simpleicons.org/i18next" alt="i18next"/>
 
-```ascii
-Project
-├── assets                                    // like svg
-├── components                                // atomic design
-│   ├── atoms
-│   ├── molecules
-│   ├── organisms
-│   └── templates
-├── config                                    // project configuration
-│   ├── i18n                                  // i18next resource
-│   │   ├── {lang}                            // ISO 639-1 Language Code [en,...,ko]
-│   │   │   └── translation.json
-│   ├── MenuItems.js
-│   └── Router.js
-├── context                                   // React Context
-│   └── {context name}                        // Context domain name
-│       ├── components                        // Context related components
-│       └── hooks                             // Context related hooks
-├── features                                  // Redux
-│   └── {reducer name}
-├── hooks                                     // common hooks
-├── lib                                       // Library configuration
-│   ├── components
-│   └── {library name}Config.js
-├── pages                                     // Pages
-│   ├── {domain}
-│   │   ├── {page}
-│   ├── {page}
-│   │   ├── components                        // children for page
-│   │   ├── {page}.jsx
-│   │   ├── {page}.module.scss                // module scss
-└── utils                                     // common utils
+**Axios** • **i18next** • **Day.js** • **Pino Logger**
+
+### Development Tools
+<img height="32" width="32" src="https://cdn.simpleicons.org/eslint" alt="eslint"/> <img height="32" width="32" src="https://cdn.simpleicons.org/prettier" alt="prettier"/> <img height="32" width="32" src="https://cdn.simpleicons.org/vitest" alt="vitest"/> <img height="32" width="32" src="https://cdn.simpleicons.org/containerd/aaaaaa" alt="devcontainer"/>
+
+**ESLint** • **Prettier** • **Vitest** • **Dev Containers** • **JSDoc**
+
+## 📁 Project Structure
 
 ```
+src/
+├── assets/                          # Static assets (icons, images)
+│   └── Icons/
+│       └── CustomIcons.jsx
+├── components/                      # Atomic Design Pattern
+│   ├── molecules/                   # Simple UI combinations
+│   │   └── LanguageSwitch/
+│   ├── organisms/                   # Complex UI components
+│   │   └── Common/
+│   │       ├── LoginForm/
+│   │       ├── Result/
+│   │       └── RootErrorBoundary/
+│   └── templates/                   # Page layouts
+│       ├── BasicLayout/
+│       ├── ExactlyCenter/
+│       └── MinimalLayout/
+├── config/                          # App configuration
+│   ├── i18n/                        # Internationalization
+│   │   ├── en/translation.json
+│   │   └── ko/translation.json
+│   ├── MenuItems.jsx                # Navigation menu config
+│   └── Router.jsx                   # Route definitions
+├── context/                         # React Context providers
+│   └── Logger/
+│       ├── components/LoggerProvider.jsx
+│       └── hooks/useLogger.jsx
+├── features/                        # Redux slices & features
+│   └── antd/
+│       ├── ThemeChangeSwitch/
+│       └── antdSlice.jsx
+├── lib/                            # Library configurations
+│   ├── components/WebVitals.jsx
+│   ├── i18nextConfig.jsx
+│   ├── pinoConfig.jsx
+│   ├── storeConfig.jsx
+│   └── themeConfig.jsx
+├── pages/                          # Page components
+│   ├── Homepage/
+│   ├── Login/
+│   ├── Loading/
+│   └── admin/
+│       ├── Dashboard/
+│       └── Settings/
+└── utils/                          # Utility functions
+```
 
-## Project configuration
+## ⚙️ Configuration
 
-### Javascript Type check enable or disable
+### TypeScript/JavaScript Type Checking
 
-1. Enable(true) / Disable(false)
+Control type checking behavior in `tsconfig.json`:
 
-   `tsconfig.json`
+```json
+{
+  "compilerOptions": {
+    "checkJs": true,    // Enable/disable JS type checking
+    "allowJs": true,    // Allow JS files in TS project
+    "strict": true      // Strict type checking
+  }
+}
+```
 
-   ```json
-   {
-     ...
-     "checkJs": true,
-     ...
-   }
-   ```
+For selective type checking, use JSDoc comments:
+- `// @ts-check` - Enable checking for specific files
+- `// @ts-nocheck` - Disable checking for specific files
 
-2. Optionnal
+### Routing Configuration
 
-   If you want to apply or not apply type check to only some parts, check the guide below.
+Define your routes in `src/config/Router.jsx`:
 
-   [JS Projects Utilizing TypeScript](https://www.typescriptlang.org/docs/handbook/intro-to-js-ts.html#ts-check)
+```jsx
+const Router = [
+  {
+    path: "/",
+    element: <MinimalLayout />,
+    children: [
+      { index: true, element: <Homepage /> },
+      { path: "login", element: <Login /> }
+    ]
+  }
+];
+```
 
-3. Using typescript
+### Menu Configuration
 
-### Router
+Configure navigation menus in `src/config/MenuItems.jsx`:
 
-`src/config/Router.js`
+```jsx
+const MenuItems = {
+  NORMAL: [
+    { key: "home", label: <Link to="/">Home</Link>, icon: <HomeOutlined /> }
+  ],
+  ADMIN: [
+    { key: "settings", label: "Settings", icon: <SettingOutlined /> }
+  ]
+};
+```
 
-### MenuItems
+### Theme Configuration
 
-`src/config/Menu.js`
+Customize Ant Design theme in `src/lib/themeConfig.jsx`:
 
-### JsDoc generation
+```jsx
+const themeConfig = {
+  themeName: "light", // or "dark"
+  designToken: {
+    components: {
+      Layout: { headerHeight: 64 }
+    }
+  },
+  componentSize: "middle"
+};
+```
 
+## 🧪 Development & Testing
+
+### Running Tests
 ```bash
-yarn doc
+npm test          # Run tests with Vitest
+npm run coverage  # Run tests with coverage report
 ```
 
-`doc` folder created
-
-### declaration export
-
+### Linting & Formatting
 ```bash
-yarn type
+npm run lint      # Run ESLint
+npx prettier --write src/  # Format code
 ```
 
-`type` folder created
+### Documentation Generation
+```bash
+npm run doc       # Generate JSDoc documentation
+npm run type      # Generate TypeScript declarations
+```
 
-## Library configuration
+## 🐛 Troubleshooting
 
-### Theme Config
+### Common Issues
 
-1. Ant Design Default theme
-
-   The initial theme acts as the system's theme setting.
-
-2. Ant Design Customize theme
-
-   To modify the Antd Theme, set the designToken according to the [Ant Design Customize Theme guide](https://ant.design/docs/react/customize-theme).
-
-   `src/lib/themeConfig.js`
-
-   ```js
-   const themeConfig = {
-     themeName: getSystemCurrentTheme,
-     designToken: {
-       components: {
-         Layout: {
-           headerHeight: 64,
-         },
-       },
-     },
-     componentSize: "middle",
-   };
-   ```
-
-## Troubleshooting
-
-1. Could not read from file error
-
-   Open `.yarnrc.yml` and change nodeLinker `pnp` to `node-modules`
-
+1. **Yarn PnP Module Resolution Issues**
+   Edit `.yarnrc.yml`:
    ```yml
-   #nodeLinker: pnp
-   nodeLinker: node-modules
+   nodeLinker: node-modules  # Change from 'pnp'
    ```
 
-## Known Issue
+2. **Port Already in Use**
+   - Default dev server runs on port 3000
+   - Change port in `vite.config.ts` if needed
 
-## Working
+### Development Tips
 
-- [ ] JSDoc to typedoc
-- [x] Vitest
-- [ ] Storybook
-- [ ] Cypress
+- Use Dev Containers for consistent development environment
+- Enable JSDoc type checking for better IntelliSense
+- Leverage Atomic Design principles for component organization
+- Use Redux DevTools for state debugging
+
+## 🚧 Roadmap
+
+- [x] **React 19 Migration** - ✅ Completed
+- [x] **Vite 6 Upgrade** - ✅ Completed  
+- [x] **Ant Design 5.23** - ✅ Completed
+- [x] **Vitest Integration** - ✅ Completed
+- [ ] **Storybook Integration** - 🔄 In Progress
+- [ ] **Cypress E2E Testing** - 📋 Planned
+- [ ] **TypeDoc Migration** - 📋 Planned
+
+## 📄 License
+
+MIT License - see [LICENSE](LICENSE) file for details.
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
+
+---
+
+<p align="center">
+  Made with ❤️ by <a href="https://github.com/comnori">comnori</a>
+</p>

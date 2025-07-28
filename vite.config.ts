@@ -8,9 +8,7 @@ import tsconfigPaths from "vite-tsconfig-paths";
 export default defineConfig({
   base: "/vite-template-awesome-soho",
   plugins: [
-    react({
-      jsxImportSource: "@welldone-software/why-did-you-render",
-    }),
+    react(),
     tsconfigPaths(),
     optimizeLodashImports({ useLodashEs: true }),
     splitVendorChunkPlugin(),
