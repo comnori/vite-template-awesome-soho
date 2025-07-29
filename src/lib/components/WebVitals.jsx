@@ -15,7 +15,7 @@ function reportWebVitals(onPerfEntry) {
 // TODO : https://codelabs.developers.google.com/codelabs/web-vitals-google-analytics-bigquery?hl=ko#4
 // TODO : .env 를 통해 사용여부 추가 필요
 /**
- * Google Analytics 에 전송z
+ * Google Analytics 에 전송
  *
  * @param {import("web-vitals").Metric} metric
  * @return {void}
