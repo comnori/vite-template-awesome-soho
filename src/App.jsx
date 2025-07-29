@@ -3,7 +3,7 @@ import { ConfigProvider, theme as antdTheme } from "antd";
 import en_US from "antd/locale/en_US";
 import ko_KR from "antd/locale/ko_KR";
 import Router from "config/Router";
-import LoggerProvider from "context/Logger/components/LoggerProvier";
+import LoggerProvider from "context/Logger/components/LoggerProvider";
 import WebVitals from "lib/components/WebVitals";
 import "lib/i18nextConfig";
 import getLogger from "lib/pinoConfig";
