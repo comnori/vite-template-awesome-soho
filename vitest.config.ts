@@ -6,7 +6,7 @@ export default mergeConfig(
   defineConfig({
     test: {
       globals: true,
-      exclude: [],
+      // Use Vitest defaults for exclusion (node_modules, dist, etc.)
     },
   }),
 );
