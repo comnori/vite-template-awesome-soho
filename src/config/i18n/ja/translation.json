@@ -1,0 +1,25 @@
+{
+  "text": {
+    "package": {
+      "title": "Reactスターターテンプレート",
+      "description": "小〜中規模のReactプロジェクトを素早く始めるためのテンプレート"
+    },
+    "go-back": "戻る",
+    "remember-me": "記憶する",
+    "username": "ユーザー名",
+    "password": "パスワード"
+  },
+  "warn": {
+    "required": "{{target}}を入力してください!"
+  },
+  "error": {
+    "page": {
+      "not-found": "お探しのページは存在しません。",
+      "unauthorized": "このページへのアクセス権がありません。",
+      "unexpected": "エラーが発生しました。"
+    }
+  },
+  "test": {
+    "login": "ログイン"
+  }
+}

@@ -1,9 +1,11 @@
 /* eslint-disable camelcase */
 import { ConfigProvider, theme as antdTheme } from "antd";
 import en_US from "antd/locale/en_US";
+import ja_JP from "antd/locale/ja_JP";
 import ko_KR from "antd/locale/ko_KR";
 import Router from "config/Router";
 import LoggerProvider from "context/Logger/components/LoggerProvider";
+import GlobalErrorBoundary from "components/organisms/Common/GlobalErrorBoundary";
 import WebVitals from "lib/components/WebVitals";
 import "lib/i18nextConfig";
 import getLogger from "lib/pinoConfig";
@@ -25,6 +27,7 @@ const algorithmList = {
 const languageList = {
   ko: ko_KR,
   en: en_US,
+  ja: ja_JP,
 };
 
 function Main() {
@@ -54,9 +57,11 @@ function App() {
   return (
     <WebVitals>
       <LoggerProvider logger={getLogger()}>
-        <ReduxProvicer store={storeConfig}>
-          <Main />
-        </ReduxProvicer>
+        <GlobalErrorBoundary>
+          <ReduxProvicer store={storeConfig}>
+            <Main />
+          </ReduxProvicer>
+        </GlobalErrorBoundary>
       </LoggerProvider>
     </WebVitals>
   );

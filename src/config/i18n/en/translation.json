@@ -15,7 +15,8 @@
   "error": {
     "page": {
       "not-found": "Sorry, the page you visited does not exist.",
-      "unauthorized": "Sorry, you are not authorized to access this page."
+      "unauthorized": "Sorry, you are not authorized to access this page.",
+      "unexpected": "Something went wrong."
     }
   },
   "test": {

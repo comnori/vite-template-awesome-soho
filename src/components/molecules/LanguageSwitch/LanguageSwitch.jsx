@@ -16,8 +16,8 @@ function LanguageSwitch() {
 
   return (
     <Segmented
-      options={["KO", "EN"]}
-      value={i18n.language.toUpperCase()}
+      options={i18n.options.supportedLngs.filter((lng) => lng !== "cimode").map((lng) => lng.toUpperCase())}
+      value={i18n.language.split("-")[0].toUpperCase()}
       onChange={(e) => handleChange(e)}
     />
   );

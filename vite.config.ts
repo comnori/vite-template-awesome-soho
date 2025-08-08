@@ -6,12 +6,7 @@ import tsconfigPaths from "vite-tsconfig-paths";
 /** @type {import('vite').UserConfig} */
 export default defineConfig({
   base: "/vite-template-awesome-soho",
-  plugins: [
-    react(),
-    tsconfigPaths(),
-    optimizeLodashImports({ useLodashEs: true }),
-    splitVendorChunkPlugin(),
-  ],
+  plugins: [react(), tsconfigPaths(), optimizeLodashImports({ useLodashEs: true }), splitVendorChunkPlugin()],
   // optimizeDeps: {
   //   disabled: false,
   // },

@@ -5,11 +5,7 @@
     "dictionaries": ["jsdoc", "closure"]
   },
   "recurseDepth": 10,
-  "plugins": [
-    "plugins/markdown",
-    "jsdoc-ts-utils",
-    "exclude-member/exclude"
-  ],
+  "plugins": ["plugins/markdown", "jsdoc-ts-utils", "exclude-member/exclude"],
   "source": {
     "include": ["./src"],
     "includePattern": "\\.(js|jsx|ts)$",

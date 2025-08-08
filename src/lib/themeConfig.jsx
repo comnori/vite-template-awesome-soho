@@ -8,16 +8,23 @@
  * @prop {themeTypeName} themeName
  */
 
-/** @type {themeTypeName} */
-const getSystemCurrentTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+const savedTheme = typeof window !== "undefined" ? localStorage.getItem("theme") : null;
+const systemTheme =
+  typeof window !== "undefined" && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 
 /** @type {antdConfigState} */
 const themeConfig = {
-  themeName: getSystemCurrentTheme,
+  themeName: savedTheme || systemTheme,
   designToken: {
+    token: {
+      colorPrimary: "#722ed1",
+    },
     components: {
       Layout: {
         headerHeight: 64,
+      },
+      Button: {
+        borderRadius: 2,
       },
     },
   },
