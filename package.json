@@ -1,7 +1,7 @@
 {
   "name": "vite-template-awesome-soho",
   "description": "React template in javascript/Typesciprt base using vite",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "homepage": "./vite-template-awesome-soho",
   "keywords": [
     "vite",
@@ -74,7 +74,12 @@
     "vite": "^6.0.7",
     "vite-plugin-svgr": "^4.1.0",
     "vite-tsconfig-paths": "^4.2.1",
-    "vitest": "^2.1.8"
+    "vitest": "^2.1.8",
+    "storybook": "^9.0.18",
+    "@storybook/react-vite": "^9.0.18",
+    "@storybook/addon-docs": "^9.0.18",
+    "@storybook/addon-onboarding": "^9.0.18",
+    "eslint-plugin-storybook": "^9.0.18"
   },
   "scripts": {
     "start": "vite",
@@ -86,7 +91,9 @@
     "doc": "npx jsdoc -c jsdoc.json",
     "analyze": "npx vite-bundle-visualizer",
     "lint": "npx eslint ./src",
-    "knip": "knip"
+    "knip": "knip",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "directories": {
     "doc": "JsDoc",
@@ -118,5 +125,10 @@
       "url": "https://patreon.com/comnori"
     }
   ],
-  "packageManager": "yarn@4.0.0"
+  "packageManager": "yarn@4.0.0",
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
+  }
 }
