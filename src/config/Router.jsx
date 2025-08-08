@@ -1,22 +1,30 @@
-import MinimalLayout from "components/templates/MinimalLayout";
-import { Homepage } from "pages";
-import Login from "pages/Login";
+import { lazy, Suspense } from "react";
+import { Loading } from "pages";
+
+const lazyLoad = (factory) => {
+  const Component = lazy(factory);
+  return (
+    <Suspense fallback={<Loading />}>
+      <Component />
+    </Suspense>
+  );
+};
 
 const Router = [
   {
     id: "root",
     path: "/",
-    element: <MinimalLayout />,
+    element: lazyLoad(() => import("components/templates/MinimalLayout")),
     children: [
       {
         id: "home",
         index: true,
-        element: <Homepage />,
+        element: lazyLoad(() => import("pages/Homepage")),
       },
       {
         id: "login",
         path: "login",
-        element: <Login />,
+        element: lazyLoad(() => import("pages/Login")),
       },
     ],
   },

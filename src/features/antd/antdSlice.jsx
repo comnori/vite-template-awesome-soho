@@ -7,8 +7,11 @@ export const antdSlice = createSlice({
   initialState: themeConfig,
   reducers: {
     toggleTheme: (state) => {
-      const { themeName } = state;
-      state.themeName = themeName === "light" ? "dark" : "light";
+      const newTheme = state.themeName === "light" ? "dark" : "light";
+      state.themeName = newTheme;
+      if (typeof window !== "undefined") {
+        localStorage.setItem("theme", newTheme);
+      }
     },
   },
 });
