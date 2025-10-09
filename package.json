@@ -96,7 +96,7 @@
     "analyze": "npx vite-bundle-visualizer",
     "lint": "npx eslint ./src",
     "knip": "knip",
-    "prepare": "husky"
+    "prepare": "husky",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
