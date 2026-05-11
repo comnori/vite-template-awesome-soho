@@ -83,7 +83,7 @@
     "@storybook/react-vite": "^9.0.18",
     "@storybook/addon-docs": "^9.0.18",
     "@storybook/addon-onboarding": "^9.0.18",
-    "eslint-plugin-storybook": "^9.0.18"
+    "eslint-plugin-storybook": "^10.3.6"
   },
   "scripts": {
     "start": "vite",
